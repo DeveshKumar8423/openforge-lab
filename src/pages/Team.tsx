@@ -29,7 +29,7 @@ const Team = () => {
       name: "Yash Kumar Gola",
       role: "Core Team",
       area: "Engineering & Systems",
-      image: "https://github.com/crimsonyash9012.png",
+      image: "/yash.png",
       github: "https://github.com/crimsonyash9012",
       linkedin: "https://in.linkedin.com/in/yash-kumar-gola-480940282",
       email: "yashkumargola9012@gmail.com",
