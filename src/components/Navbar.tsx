@@ -20,19 +20,19 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 relative">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center group-hover:shadow-lg group-hover:shadow-primary/50 transition-all">
-              <span className="text-xl font-bold text-primary-foreground">OC</span>
+              <span className="text-xl font-bold text-primary-foreground">DA</span>
             </div>
             <span className="font-heading text-xl font-bold gradient-text hidden sm:block">
-              OpenCollab
+              DEV-ARC
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          {/* Desktop Navigation (centered) */}
+          <div className="hidden md:flex items-center space-x-1 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -57,7 +57,7 @@ const Navbar = () => {
               className="text-muted-foreground hover:text-foreground"
             >
               <a
-                href="https://github.com/opencollab-research"
+                href="https://github.com/DevAIRC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -73,7 +73,7 @@ const Navbar = () => {
               className="text-muted-foreground hover:text-foreground"
             >
               <a
-                href="https://discord.gg/opencollab"
+                href="https://discord.gg/zrreSSa5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -82,12 +82,19 @@ const Navbar = () => {
                 Discord
               </a>
             </Button>
+            
             <Button
               size="sm"
               asChild
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
             >
-              <Link to="/join">Join Us</Link>
+              <a
+                href="https://forms.gle/5HujtL6qb6qLmcW37"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Us
+              </a>
             </Button>
           </div>
 
@@ -125,7 +132,7 @@ const Navbar = () => {
                 className="w-full justify-start"
               >
                 <a
-                  href="https://github.com/opencollab-research"
+                  href="https://github.com/DevAIRC"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -141,7 +148,7 @@ const Navbar = () => {
                 className="w-full justify-start"
               >
                 <a
-                  href="https://discord.gg/opencollab"
+                  href="https://discord.gg/zrreSSa5"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
@@ -150,14 +157,20 @@ const Navbar = () => {
                   Discord
                 </a>
               </Button>
+              
               <Button
                 size="sm"
                 asChild
                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <Link to="/join" onClick={() => setIsOpen(false)}>
+                <a
+                  href="https://forms.gle/5HujtL6qb6qLmcW37"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                >
                   Join Us
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

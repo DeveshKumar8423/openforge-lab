@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { Github, ExternalLink, Star, GitFork } from "lucide-react";
 
 interface ProjectCardProps {
@@ -11,6 +12,9 @@ interface ProjectCardProps {
   stars?: number;
   forks?: number;
   language?: string;
+  detailsPath?: string;
+  detailsState?: any;
+  onDetails?: () => void;
 }
 
 const ProjectCard = ({
@@ -21,6 +25,9 @@ const ProjectCard = ({
   stars = 0,
   forks = 0,
   language,
+  detailsPath,
+  detailsState,
+  onDetails,
 }: ProjectCardProps) => {
   return (
     <Card className="p-6 bg-card hover-glow group transition-all duration-300 h-full flex flex-col">
@@ -81,21 +88,43 @@ const ProjectCard = ({
             View Code
           </a>
         </Button>
-        <Button
-          size="sm"
-          asChild
-          className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-        >
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2"
+        {onDetails ? (
+          <Button
+            size="sm"
+            className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+            onClick={onDetails}
           >
-            <ExternalLink className="w-4 h-4" />
+            <ExternalLink className="w-4 h-4 mr-2" />
             Details
-          </a>
-        </Button>
+          </Button>
+        ) : detailsPath ? (
+          <Button
+            size="sm"
+            asChild
+            className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+          >
+            <Link to={detailsPath} state={detailsState} className="flex items-center gap-2">
+              <ExternalLink className="w-4 h-4" />
+              Details
+            </Link>
+          </Button>
+        ) : (
+          <Button
+            size="sm"
+            asChild
+            className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+          >
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Details
+            </a>
+          </Button>
+        )}
       </div>
     </Card>
   );

@@ -63,7 +63,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-fadeIn">
             <h1 className="text-5xl md:text-6xl font-heading font-bold">
-              About <span className="gradient-text">OpenCollab</span>
+              About <span className="gradient-text">DEV-ARC</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               We are a collaborative research lab dedicated to advancing AI, ML, and interdisciplinary 
@@ -142,6 +142,47 @@ const About = () => {
         </div>
       </section>
 
+      {/* Collaborators */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-10">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold">
+              Our <span className="gradient-text">Collaborators</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Organizations and research groups partnering with DEV-ARC
+            </p>
+          </div>
+
+          <div className="border border-border rounded-2xl bg-card/20 p-8">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-8 items-center justify-items-center">
+              {[
+                "/collaborators/Princeton.png",
+                "/collaborators/Dartmouth.png",
+                "/collaborators/UTexas.png",
+                "/collaborators/iit kanpur.png",
+                "/collaborators/BITS.png",
+                "/collaborators/BARC.png",
+                "/collaborators/UCD.png",
+                "/collaborators/Waterloo.png",
+              ].map((src, idx) => {
+                const sizeClass = src.includes("Princeton.png")
+                  ? "max-h-28 md:max-h-32 lg:max-h-40"
+                  : "max-h-16 md:max-h-20 lg:max-h-24";
+                return (
+                  <img
+                    key={idx}
+                    src={src}
+                    alt="Collaborator"
+                    className={`${sizeClass} h-auto w-auto opacity-90 hover:opacity-100 transition-opacity`}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Research Areas */}
       <section className="py-20 bg-card/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -183,27 +224,34 @@ const About = () => {
         </div>
       </section>
 
+      
+
       {/* Founder Section */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="p-8 md:p-12 bg-card hover-glow max-w-4xl mx-auto">
             <div className="text-center space-y-6">
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mx-auto">
-                <span className="text-4xl font-bold text-primary-foreground">DG</span>
-              </div>
+              <img
+                src="/devesh.png"
+                alt="Devesh Kumar Gola"
+                className="w-24 h-24 rounded-full object-cover mx-auto"
+              />
               <div className="space-y-2">
                 <h3 className="text-2xl font-heading font-bold">Devesh Kumar Gola</h3>
                 <p className="text-primary font-medium">Founder & Principal Investigator</p>
               </div>
               <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Devesh is a passionate researcher and advocate for open science. With a vision to 
-                democratize research and foster global collaboration, he founded OpenCollab to create 
-                a platform where brilliant minds can unite to solve complex problems and advance 
-                human knowledge.
+                Founded by Devesh Kumar Gola, DEV-ARC (Devesh AI Research Center) is an independent research initiative bridging Artificial Intelligence, Psychology, and Interdisciplinary Innovation — creating technology that not only learns intelligently but understands deeply.
+              </p>
+              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                Devesh brings research experience across Princeton University, Dartmouth College, The University of Texas at Austin, IIT Kanpur, BITS Pilani, BARC, UCD, DTU, and the University of Waterloo, contributing to pioneering work in AI, NLP, Cognitive Science, and Brain Decoding. His projects span motion intelligence, sustainable NLP, psychological modeling, and open-source system optimization, integrating computational precision with human insight.
+              </p>
+              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                Through DEV-ARC, he envisions a global open-science ecosystem that empowers collaboration, advances ethical AI, and explores the intersection of machine intelligence and the human mind.
               </p>
               <div className="flex gap-4 justify-center pt-4">
                 <a
-                  href="https://github.com/deveshkumargola"
+                  href="https://github.com/DeveshKumar8423"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all"
@@ -211,7 +259,7 @@ const About = () => {
                   GitHub
                 </a>
                 <a
-                  href="https://linkedin.com/in/deveshkumargola"
+                  href="https://in.linkedin.com/in/devesh-kumar-gola-450a0436b"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all"
@@ -219,12 +267,18 @@ const About = () => {
                   LinkedIn
                 </a>
                 <a
-                  href="https://scholar.google.com"
+                  href="mailto:deveshkumar8423gola@gmail.com"
+                  className="px-4 py-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all"
+                >
+                  Gmail
+                </a>
+                <a
+                  href="https://devesh-kumar-gola.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all"
                 >
-                  Google Scholar
+                  Portfolio
                 </a>
               </div>
             </div>

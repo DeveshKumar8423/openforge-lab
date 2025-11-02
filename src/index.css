@@ -8,44 +8,44 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 100%; /* white */
+    --foreground: 0 0% 10%; /* near-black */
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
 
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 227 58% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 0%; /* black */
+    --primary-foreground: 0 0% 100%; /* white */
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 227 58% 65%;
+    --accent: 0 0% 0%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 12%;
-    --ring: 227 58% 65%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 0 0% 0%;
 
     --radius: 0.75rem;
 
     /* Custom gradient tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(227 58% 65%), hsl(235 65% 72%));
-    --gradient-dark: linear-gradient(180deg, hsl(0 0% 0%), hsl(0 0% 3%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 8% / 0.5), hsl(0 0% 10% / 0.3));
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 15%), hsl(0 0% 0%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.7), hsl(0 0% 98% / 0.7));
     
     /* Glow effects */
-    --glow-primary: 0 0 40px hsl(227 58% 65% / 0.3);
-    --glow-accent: 0 10px 30px hsl(227 58% 65% / 0.2);
+    --glow-primary: 0 0 40px hsl(0 0% 0% / 0.15);
+    --glow-accent: 0 10px 30px hsl(0 0% 0% / 0.12);
     
     /* Animation curves */
     --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,5 +123,19 @@ All colors MUST be HSL.
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  /* Simple marquee utility for scrolling logos */
+  .marquee {
+    display: inline-flex;
+    gap: 4rem;
+    padding-left: 4rem;
+    animation: marquee 35s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
   }
 }

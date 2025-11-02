@@ -11,76 +11,39 @@ const Team = () => {
       name: "Devesh Kumar Gola",
       role: "Founder & PI",
       area: "AI & Psychology",
-      github: "https://github.com/deveshkumargola",
-      linkedin: "https://linkedin.com/in/deveshkumargola",
-      email: "devesh@opencollab.research",
+      image: "/devesh.png",
+      github: "https://github.com/DeveshKumar8423",
+      linkedin: "https://in.linkedin.com/in/devesh-kumar-gola-450a0436b",
+      email: "deveshkumar8423gola@gmail.com",
     },
     {
-      name: "Sarah Chen",
-      role: "Lead ML Engineer",
-      area: "Machine Learning",
-      github: "https://github.com/sarahchen",
-      linkedin: "https://linkedin.com/in/sarahchen",
-      email: "sarah@opencollab.research",
+      name: "Kumkum Mishra",
+      role: "Core Team",
+      area: "Research & Operations",
+      image: "/kumkum.png",
+      github: "https://github.com/Kumkum-Mishra",
+      linkedin: "https://in.linkedin.com/in/kumkum-mishra-2442a82b8",
+      email: "kumkummishra892004@gmail.com",
     },
     {
-      name: "Raj Patel",
-      role: "NLP Researcher",
-      area: "Natural Language Processing",
-      github: "https://github.com/rajpatel",
-      linkedin: "https://linkedin.com/in/rajpatel",
-      email: "raj@opencollab.research",
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Data Scientist",
-      area: "Data Science & Analytics",
-      github: "https://github.com/emilyrodriguez",
-      linkedin: "https://linkedin.com/in/emilyrodriguez",
-      email: "emily@opencollab.research",
-    },
-    {
-      name: "Michael Zhang",
-      role: "AI Researcher",
-      area: "Deep Learning",
-      github: "https://github.com/michaelzhang",
-      linkedin: "https://linkedin.com/in/michaelzhang",
-      email: "michael@opencollab.research",
-    },
-    {
-      name: "Priya Sharma",
-      role: "Research Associate",
-      area: "Psychology & AI",
-      github: "https://github.com/priyasharma",
-      linkedin: "https://linkedin.com/in/priyasharma",
-      email: "priya@opencollab.research",
+      name: "Yash Kumar Gola",
+      role: "Core Team",
+      area: "Engineering & Systems",
+      image: "https://github.com/crimsonyash9012.png",
+      github: "https://github.com/crimsonyash9012",
+      linkedin: "https://in.linkedin.com/in/yash-kumar-gola-480940282",
+      email: "yashkumargola9012@gmail.com",
     },
   ];
 
   const collaborators = [
     {
-      name: "Alex Thompson",
+      name: "Nishkarsh",
       role: "Contributor",
-      area: "Full Stack Development",
-      github: "https://github.com/alexthompson",
-    },
-    {
-      name: "Lisa Wang",
-      role: "Contributor",
-      area: "Computer Vision",
-      github: "https://github.com/lisawang",
-    },
-    {
-      name: "Jordan Kim",
-      role: "Contributor",
-      area: "DevOps & MLOps",
-      github: "https://github.com/jordankim",
-    },
-    {
-      name: "Aisha Mohammed",
-      role: "Contributor",
-      area: "Ethics in AI",
-      github: "https://github.com/aishamohammed",
+      area: "Research & Engineering",
+      github: "#",
+      linkedin: "#",
+      email: "nishkarsh@example.com",
     },
   ];
 
@@ -111,7 +74,7 @@ const Team = () => {
               Core <span className="gradient-text">Team</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              The driving force behind OpenCollab
+              The driving force behind DEV-ARC
             </p>
           </div>
           
@@ -175,7 +138,7 @@ const Team = () => {
                 asChild
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
-                <Link to="/join">Apply to Join</Link>
+                <a href="https://forms.gle/5HujtL6qb6qLmcW37" target="_blank" rel="noopener noreferrer">Apply to Join</a>
               </Button>
               <Button
                 size="lg"
@@ -184,7 +147,7 @@ const Team = () => {
                 className="border-primary/20 hover:bg-primary/10"
               >
                 <a
-                  href="https://github.com/opencollab-research"
+                  href="https://github.com/DevAIRC"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

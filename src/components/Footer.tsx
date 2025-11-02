@@ -12,18 +12,18 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">OC</span>
+                <span className="text-xl font-bold text-primary-foreground">DA</span>
               </div>
               <span className="font-heading text-lg font-bold gradient-text">
-                OpenCollab
+                DEV-ARC
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Open collaboration for AI, ML, and interdisciplinary research
+              Research center for advanced AI, ML, and interdisciplinary innovation
             </p>
             <div className="flex space-x-3">
               <a
-                href="https://github.com/opencollab-research"
+                href="https://github.com/DevAIRC"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all hover-glow"
@@ -31,7 +31,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://discord.gg/opencollab"
+                href="https://discord.gg/zrreSSa5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all hover-glow"
@@ -39,7 +39,7 @@ const Footer = () => {
                 <MessageSquare className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/company/opencollab"
+                href="https://www.linkedin.com/company/devarc8423/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all hover-glow"
@@ -127,11 +127,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:contact@opencollab.research"
+                  href="mailto:devai.research.center@gmail.com"
                   className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
                   <Mail className="w-4 h-4" />
-                  contact@opencollab.research
+                  devai.research.center@gmail.com
                 </a>
               </li>
               <li>
@@ -148,9 +148,9 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} OpenCollab Research Lab. Founded by{" "}
+            © {currentYear} DEV-ARC Research Center. Founded by{" "}
             <a
-              href="https://github.com/deveshkumargola"
+              href="https://github.com/DeveshKumar8423"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline"

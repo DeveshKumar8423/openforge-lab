@@ -60,26 +60,26 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@opencollab.research",
-      link: "mailto:contact@opencollab.research",
+      value: "devai.research.center@gmail.com",
+      link: "mailto:devai.research.center@gmail.com",
     },
     {
       icon: Github,
       title: "GitHub",
-      value: "opencollab-research",
-      link: "https://github.com/opencollab-research",
+      value: "DevAIRC",
+      link: "https://github.com/DevAIRC",
     },
     {
       icon: MessageSquare,
       title: "Discord",
       value: "Join our server",
-      link: "https://discord.gg/opencollab",
+      link: "https://discord.gg/zrreSSa5",
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
-      value: "OpenCollab Research",
-      link: "https://linkedin.com/company/opencollab",
+      value: "DEV-ARC",
+      link: "https://www.linkedin.com/company/devarc8423/",
     },
   ];
 
@@ -230,7 +230,7 @@ const Contact = () => {
                     Our Location
                   </h3>
                   <p className="text-muted-foreground">
-                    OpenCollab Research Lab is a distributed team with members 
+                    DEV-ARC Research Center is a distributed team with members 
                     collaborating globally. Our virtual headquarters is on GitHub 
                     and Discord, where we connect daily.
                   </p>

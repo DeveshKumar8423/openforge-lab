@@ -88,7 +88,7 @@ const Join = () => {
               <Rocket className="w-8 h-8 text-primary" />
             </div>
             <h1 className="text-5xl md:text-6xl font-heading font-bold">
-              Join <span className="gradient-text">OpenCollab</span>
+              Join <span className="gradient-text">DEV-ARC</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               Become part of a global community driving innovation in AI and research
@@ -120,109 +120,26 @@ const Join = () => {
         </div>
       </section>
 
-      {/* Application Form */}
+      {/* Google Form */}
       <section className="py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <Card className="max-w-2xl mx-auto p-8 md:p-12 bg-card hover-glow">
+          <Card className="max-w-3xl mx-auto p-6 md:p-8 bg-card hover-glow">
             <div className="space-y-6">
               <div className="text-center space-y-2">
-                <h2 className="text-3xl font-heading font-bold">
-                  Application Form
-                </h2>
-                <p className="text-muted-foreground">
-                  Tell us about yourself and why you want to join
-                </p>
+                <h2 className="text-3xl font-heading font-bold">Application Form</h2>
+                <p className="text-muted-foreground">Apply via our Google Form</p>
               </div>
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Full Name *</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="John Doe"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="bg-input border-border"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email Address *</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="john@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="bg-input border-border"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="github">GitHub Profile URL *</Label>
-                  <Input
-                    id="github"
-                    name="github"
-                    type="url"
-                    placeholder="https://github.com/johndoe"
-                    value={formData.github}
-                    onChange={handleChange}
-                    required
-                    className="bg-input border-border"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="area">Area of Interest *</Label>
-                  <Input
-                    id="area"
-                    name="area"
-                    type="text"
-                    placeholder="e.g., Machine Learning, NLP, Data Science"
-                    value={formData.area}
-                    onChange={handleChange}
-                    required
-                    className="bg-input border-border"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="reason">Why do you want to join? *</Label>
-                  <Textarea
-                    id="reason"
-                    name="reason"
-                    placeholder="Tell us about your motivation, experience, and what you hope to contribute..."
-                    value={formData.reason}
-                    onChange={handleChange}
-                    required
-                    className="bg-input border-border min-h-[150px]"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Minimum 100 characters
-                  </p>
-                </div>
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
-                >
-                  Submit Application
+              <div className="w-full">
+                <iframe
+                  src="https://forms.gle/5HujtL6qb6qLmcW37"
+                  className="w-full h-[70vh] rounded-lg border border-border"
+                  title="DEV-ARC Application Form"
+                />
+              </div>
+              <div className="text-center">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <a href="https://forms.gle/5HujtL6qb6qLmcW37" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
                 </Button>
-              </form>
-
-              <div className="pt-4 text-center text-sm text-muted-foreground">
-                <p>
-                  Already have an account?{" "}
-                  <a href="https://discord.gg/opencollab" className="text-primary hover:underline">
-                    Join our Discord
-                  </a>
-                </p>
               </div>
             </div>
           </Card>

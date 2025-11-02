@@ -5,36 +5,30 @@ import Footer from "@/components/Footer";
 import StatCard from "@/components/StatCard";
 import ProjectCard from "@/components/ProjectCard";
 import { ArrowRight, Users, GitBranch, BookOpen, Award, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
-import researchVisual from "@/assets/research-visual.jpg";
+// Hero background now uses root-level /image.png served by Vite
+// Inline research visual now uses root-level /image.png
 
 const Index = () => {
   const featuredProjects = [
     {
-      title: "AI-Counselor Assistant",
-      description: "An AI-powered counseling assistant using NLP to provide mental health support and guidance",
-      tags: ["Python", "NLP", "TensorFlow", "Psychology"],
-      githubUrl: "https://github.com/opencollab-research/ai-counselor",
-      stars: 45,
-      forks: 12,
+      title: "Carbon Prompting Playground",
+      description: "Interactive ML system to predict carbon emissions from AI prompts with real-time visualizations.",
+      tags: ["Python", "Flask", "scikit-learn", "D3.js"],
+      githubUrl: "https://github.com/DeveshKumar8423/CarbonPrompt-Playground",
       language: "Python",
     },
     {
-      title: "ML Model Hub",
-      description: "Centralized repository of pre-trained machine learning models for various domains",
-      tags: ["PyTorch", "Scikit-learn", "Docker"],
-      githubUrl: "https://github.com/opencollab-research/ml-model-hub",
-      stars: 78,
-      forks: 23,
-      language: "Python",
+      title: "EcoRide - Smart Carpooling Platform",
+      description: "A smart carpooling platform focused on efficient ride-sharing and sustainability.",
+      tags: ["React", "Node.js", "TypeScript"],
+      githubUrl: "https://github.com/DeveshKumar8423/EcoRide",
+      language: "TypeScript",
     },
     {
-      title: "DataViz Explorer",
-      description: "Interactive data visualization toolkit for exploring complex datasets",
-      tags: ["D3.js", "React", "TypeScript"],
-      githubUrl: "https://github.com/opencollab-research/dataviz-explorer",
-      stars: 34,
-      forks: 8,
+      title: "Cold Emailing Automation Tool",
+      description: "Automates cold email campaigns with personalization, scheduling, and analytics to improve outreach efficiency.",
+      tags: ["TypeScript", "Node.js", "Automation"],
+      githubUrl: "#", // TODO: replace with repository link
       language: "TypeScript",
     },
   ];
@@ -48,7 +42,7 @@ const Index = () => {
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url(${heroImage})`,
+            backgroundImage: `url(/homeimage.png)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -60,7 +54,7 @@ const Index = () => {
             <div className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4">
               <span className="text-primary text-sm font-medium flex items-center gap-2">
                 <Sparkles className="w-4 h-4" />
-                Open Collaboration for Research
+                DEV-ARC Research Center
               </span>
             </div>
             
@@ -70,8 +64,8 @@ const Index = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              OpenCollab is a collaborative research lab where researchers, developers, and students 
-              unite to advance AI, ML, and interdisciplinary research through open-source innovation
+              DEV-ARC is a research center where researchers, developers, and students unite to 
+              advance AI, ML, and interdisciplinary research through open collaboration
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -102,10 +96,10 @@ const Index = () => {
       <section className="py-16 bg-card/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <StatCard icon={GitBranch} value="15+" label="Active Projects" delay={0} />
-            <StatCard icon={Users} value="30+" label="Contributors" delay={100} />
-            <StatCard icon={BookOpen} value="8+" label="Publications" delay={200} />
-            <StatCard icon={Award} value="5+" label="Awards" delay={300} />
+            <StatCard icon={GitBranch} value="10+" label="Active Projects" delay={0} />
+            <StatCard icon={Users} value="4+" label="Contributors" delay={100} />
+            <StatCard icon={BookOpen} value="0+1 (in progress)" label="Publications" delay={200} />
+            <StatCard icon={Award} value="1" label="Awards" delay={300} />
           </div>
         </div>
       </section>
@@ -147,8 +141,8 @@ const Index = () => {
             </div>
             <div className="relative animate-float">
               <img
-                src={researchVisual}
-                alt="Research visualization"
+                src="/homeimage.png"
+                alt="DEV-ARC research visual"
                 className="rounded-2xl shadow-2xl shadow-primary/20"
               />
             </div>
@@ -209,7 +203,13 @@ const Index = () => {
                 asChild
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium"
               >
-                <Link to="/join">Apply to Join</Link>
+                <a
+                  href="https://forms.gle/5HujtL6qb6qLmcW37"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply to Join
+                </a>
               </Button>
               <Button
                 size="lg"
