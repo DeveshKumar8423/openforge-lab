@@ -34,7 +34,7 @@ const About = () => {
     },
     {
       title: "Machine Learning",
-      topics: ["Supervised Learning", "Reinforcement Learning", "Transfer Learning", "AutoML"],
+      topics: ["Supervised Learning", "Reinforcement Learning", "Transfer Learning" , "Unsupervised Learning"],
     },
     {
       title: "Natural Language Processing",
