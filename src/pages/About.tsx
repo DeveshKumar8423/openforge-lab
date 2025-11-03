@@ -45,7 +45,7 @@ const About = () => {
       topics: ["Data Visualization", "Statistical Analysis", "Big Data", "Predictive Modeling"],
     },
     {
-      title: "Psychology & Counseling",
+      title: "Psychology Related",
       topics: ["Mental Health AI", "Behavioral Analysis", "Therapeutic Chatbots", "Wellness Apps"],
     },
     {

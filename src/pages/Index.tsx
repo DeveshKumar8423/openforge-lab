@@ -122,7 +122,7 @@ const Index = () => {
                   "Machine Learning",
                   "Natural Language Processing",
                   "Data Science",
-                  "Psychology & Counseling",
+                  "Psychology Related",
                   "Interdisciplinary Innovation",
                 ].map((area, index) => (
                   <div

@@ -114,7 +114,7 @@ const Footer = () => {
                 Data Science
               </li>
               <li className="text-sm text-muted-foreground">
-                Psychology & Counseling
+                Psychology Related
               </li>
             </ul>
           </div>
